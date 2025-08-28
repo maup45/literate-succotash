@@ -78,18 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Floating bubble interaction
-    document.querySelectorAll('.floating-bubble').forEach(bubble => {
-        bubble.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.2)';
-            this.style.filter = 'blur(1px)';
-        });
-        
-        bubble.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-            this.style.filter = 'blur(2px)';
-        });
-    });
+    // Subtle bubble effects (non-interactive for better readability)
+    // Bubbles are now purely decorative and don't interfere with user interaction
 
     // Form enhancement
     const form = document.querySelector('form');
@@ -133,20 +123,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Parallax effect for hero section
-    window.addEventListener('scroll', () => {
+    // Subtle parallax effect for hero section (optimized)
+    let ticking = false;
+    function updateParallax() {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero-bg');
-        const bubbles = document.querySelectorAll('.floating-bubble');
         
-        if (hero) {
-            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        if (hero && scrolled < window.innerHeight) {
+            // Only apply parallax when hero is visible and reduce intensity
+            hero.style.transform = `translateY(${scrolled * 0.2}px)`;
         }
-        
-        bubbles.forEach((bubble, index) => {
-            const speed = 0.5 + (index * 0.1);
-            bubble.style.transform = `translateY(${scrolled * speed}px)`;
-        });
+        ticking = false;
+    }
+    
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
     });
 
     // Enhanced card hover effects
@@ -175,15 +169,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Emergency button pulse effect
+    // Subtle emergency button indication
     const emergencyBtn = document.querySelector('.btn-emergency');
     if (emergencyBtn) {
-        setInterval(() => {
-            emergencyBtn.style.boxShadow = '0 0 20px rgba(251, 113, 133, 0.5)';
-            setTimeout(() => {
-                emergencyBtn.style.boxShadow = '';
-            }, 500);
-        }, 3000);
+        // Use CSS animation instead of JavaScript for better performance
+        emergencyBtn.classList.add('emergency-pulse');
     }
 
     // Add loading animation
