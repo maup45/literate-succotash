@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeepHull Diving — 24/7 Hull Cleaning in Jacksonville & St. Augustine</title>
+  <title>DeepHull Diving — Professional Marine Services</title>
   <meta name="description" content="Certified commercial divers for underwater hull cleaning, prop polishing, and zinc replacement. 24/7 emergency service. Call (904) 570-0910.">
   <link rel="canonical" href="https://deephull.netlify.app/">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/index-pgpn7qvg.css">
   <link rel="stylesheet" href="/design-system.css">
-  <script type="module" src="/index-bdrpnltx.js"></script>
+  <script src="/script.js" defer></script>
   <script type="application/ld+json">{
  "@context":"https://schema.org",
  "@type":"LocalBusiness",
@@ -23,7 +23,405 @@
 }</script>
 </head>
 <body>
-  <div id="root"></div>
-  <a href="/forms.html" style="display:none">Forms</a>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 gradient-navy backdrop-blur-sm border-b border-aqua-500/20">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+          <div class="text-2xl font-bold text-gradient-aqua">DeepHull</div>
+          <div class="hidden md:flex space-x-6">
+            <a href="#services" class="text-pearl-white hover:text-aqua-400 transition-all duration-300">Services</a>
+            <a href="#about" class="text-pearl-white hover:text-aqua-400 transition-all duration-300">About</a>
+            <a href="#contact" class="text-pearl-white hover:text-aqua-400 transition-all duration-300">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span class="text-pearl-300 text-sm hidden sm:block">(904) 570-0910</span>
+          <button class="btn-emergency text-sm">Emergency</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+    <!-- Floating Bubbles -->
+    <div class="floating-bubble top-20 left-10 animate-float"></div>
+    <div class="floating-bubble top-40 right-20 animate-float" style="animation-delay: 2s;"></div>
+    <div class="floating-bubble bottom-40 left-1/4 animate-float" style="animation-delay: 4s;"></div>
+    <div class="floating-bubble bottom-20 right-1/3 animate-float" style="animation-delay: 1s;"></div>
+    
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <div class="animate-fadeInUp">
+        <h1 class="hero-title text-gradient-aqua mb-6">DeepHull Diving</h1>
+        <p class="hero-subtitle text-pearl-white mb-4">Professional Marine Services</p>
+        <p class="hero-tagline text-aqua-400 mb-8">24/7 EMERGENCY SERVICE</p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <button class="btn-primary text-lg px-8 py-4">Get Quote</button>
+          <button class="btn-emergency text-lg px-8 py-4">Emergency Call</button>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div class="glass-card p-6 text-center">
+            <div class="w-16 h-16 bg-aqua-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <span class="text-2xl">🌊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-pearl-white mb-2">Hull Cleaning</h3>
+            <p class="text-pearl-300">Professional underwater hull cleaning services</p>
+          </div>
+          <div class="glass-card p-6 text-center">
+            <div class="w-16 h-16 bg-aqua-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <span class="text-2xl">⚙️</span>
+            </div>
+            <h3 class="text-xl font-semibold text-pearl-white mb-2">Prop Polishing</h3>
+            <p class="text-pearl-300">Expert propeller polishing and maintenance</p>
+          </div>
+          <div class="glass-card p-6 text-center">
+            <div class="w-16 h-16 bg-aqua-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <span class="text-2xl">🔋</span>
+            </div>
+            <h3 class="text-xl font-semibold text-pearl-white mb-2">Zinc Replacement</h3>
+            <p class="text-pearl-300">Complete zinc anode replacement services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-navy-900 relative">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold text-pearl-white mb-4">Our Services</h2>
+        <p class="text-xl text-pearl-300 max-w-2xl mx-auto">Professional underwater services to keep your vessel in optimal condition</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="card p-8 hover:transform hover:scale-105 transition-all duration-500">
+          <div class="w-20 h-20 bg-gradient-aqua rounded-xl mb-6 flex items-center justify-center">
+            <span class="text-3xl">🧹</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-pearl-white mb-4">Hull Cleaning</h3>
+          <p class="text-pearl-300 mb-6">Professional underwater hull cleaning to remove marine growth, barnacles, and debris. Improves fuel efficiency and vessel performance.</p>
+          <ul class="text-pearl-300 mb-6 space-y-2">
+            <li>• Complete hull inspection</li>
+            <li>• Marine growth removal</li>
+            <li>• Propeller cleaning</li>
+            <li>• Performance optimization</li>
+          </ul>
+          <button class="btn-primary w-full">Learn More</button>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="card p-8 hover:transform hover:scale-105 transition-all duration-500">
+          <div class="w-20 h-20 bg-gradient-aqua rounded-xl mb-6 flex items-center justify-center">
+            <span class="text-3xl">✨</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-pearl-white mb-4">Prop Polishing</h3>
+          <p class="text-pearl-300 mb-6">Expert propeller polishing and maintenance to ensure optimal performance and fuel efficiency for your vessel.</p>
+          <ul class="text-pearl-300 mb-6 space-y-2">
+            <li>• Propeller inspection</li>
+            <li>• Surface polishing</li>
+            <li>• Damage assessment</li>
+            <li>• Performance testing</li>
+          </ul>
+          <button class="btn-primary w-full">Learn More</button>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="card p-8 hover:transform hover:scale-105 transition-all duration-500">
+          <div class="w-20 h-20 bg-gradient-aqua rounded-xl mb-6 flex items-center justify-center">
+            <span class="text-3xl">🛡️</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-pearl-white mb-4">Zinc Replacement</h3>
+          <p class="text-pearl-300 mb-6">Complete zinc anode replacement services to protect your vessel from corrosion and extend its lifespan.</p>
+          <ul class="text-pearl-300 mb-6 space-y-2">
+            <li>• Anode inspection</li>
+            <li>• Corrosion assessment</li>
+            <li>• Complete replacement</li>
+            <li>• Protection verification</li>
+          </ul>
+          <button class="btn-primary w-full">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 gradient-navy-aqua relative">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-slideInRight">
+          <h2 class="text-5xl font-bold text-pearl-white mb-6">Why Choose DeepHull?</h2>
+          <p class="text-xl text-pearl-300 mb-8">With over 15 years of experience in commercial diving and marine services, we provide the highest quality underwater maintenance for vessels of all sizes.</p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-aqua-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-xl">✓</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-pearl-white mb-2">Certified Professionals</h3>
+                <p class="text-pearl-300">All our divers are certified and experienced in commercial diving operations.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-aqua-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-xl">⚡</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-pearl-white mb-2">24/7 Emergency Service</h3>
+                <p class="text-pearl-300">Available around the clock for emergency marine services and urgent repairs.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-aqua-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-xl">🎯</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-pearl-white mb-2">Quality Guaranteed</h3>
+                <p class="text-pearl-300">We stand behind our work with a 100% satisfaction guarantee on all services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="glass-card p-8 text-center">
+            <h3 class="text-2xl font-bold text-pearl-white mb-6">Service Areas</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="service-badge text-center">Jacksonville</div>
+              <div class="service-badge text-center">St. Augustine</div>
+              <div class="service-badge text-center">Ponte Vedra Beach</div>
+              <div class="service-badge text-center">Fernandina Beach</div>
+            </div>
+            <div class="mt-8">
+              <button class="btn-secondary">View Full Coverage Area</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-navy-950 relative">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold text-pearl-white mb-4">Get In Touch</h2>
+        <p class="text-xl text-pearl-300">Ready to schedule your marine service? Contact us today!</p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div class="glass-card p-8">
+            <h3 class="text-2xl font-semibold text-pearl-white mb-6">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-aqua-500 rounded-full flex items-center justify-center">
+                  <span class="text-xl">📞</span>
+                </div>
+                <div>
+                  <p class="text-pearl-white font-semibold">Phone</p>
+                  <p class="text-aqua-400 text-lg">(904) 570-0910</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-aqua-500 rounded-full flex items-center justify-center">
+                  <span class="text-xl">📧</span>
+                </div>
+                <div>
+                  <p class="text-pearl-white font-semibold">Email</p>
+                  <p class="text-aqua-400 text-lg">info@deephull.com</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-aqua-500 rounded-full flex items-center justify-center">
+                  <span class="text-xl">📍</span>
+                </div>
+                <div>
+                  <p class="text-pearl-white font-semibold">Service Area</p>
+                  <p class="text-aqua-400 text-lg">Jacksonville, FL & Surrounding Areas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="glass-card p-8">
+            <h3 class="text-2xl font-semibold text-pearl-white mb-6">Emergency Service</h3>
+            <p class="text-pearl-300 mb-6">Available 24/7 for emergency marine services. Don't wait - call us immediately for urgent underwater repairs.</p>
+            <button class="btn-emergency w-full text-lg py-4">Emergency Call Now</button>
+          </div>
+        </div>
+        
+        <div class="glass-card p-8">
+          <h3 class="text-2xl font-semibold text-pearl-white mb-6">Request a Quote</h3>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="text" placeholder="First Name" class="w-full px-4 py-3 bg-navy-800 border border-aqua-500/30 rounded-lg text-pearl-white placeholder-pearl-400 focus:outline-none focus:border-aqua-500 transition-all">
+              <input type="text" placeholder="Last Name" class="w-full px-4 py-3 bg-navy-800 border border-aqua-500/30 rounded-lg text-pearl-white placeholder-pearl-400 focus:outline-none focus:border-aqua-500 transition-all">
+            </div>
+            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-navy-800 border border-aqua-500/30 rounded-lg text-pearl-white placeholder-pearl-400 focus:outline-none focus:border-aqua-500 transition-all">
+            <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 bg-navy-800 border border-aqua-500/30 rounded-lg text-pearl-white placeholder-pearl-400 focus:outline-none focus:border-aqua-500 transition-all">
+            <select class="w-full px-4 py-3 bg-navy-800 border border-aqua-500/30 rounded-lg text-pearl-white focus:outline-none focus:border-aqua-500 transition-all" aria-label="Select a service">
+              <option value="">Select Service</option>
+              <option value="hull-cleaning">Hull Cleaning</option>
+              <option value="prop-polishing">Prop Polishing</option>
+              <option value="zinc-replacement">Zinc Replacement</option>
+              <option value="emergency">Emergency Service</option>
+            </select>
+            <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 bg-navy-800 border border-aqua-500/30 rounded-lg text-pearl-white placeholder-pearl-400 focus:outline-none focus:border-aqua-500 transition-all"></textarea>
+            <button type="submit" class="btn-primary w-full text-lg py-4">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient-navy-aqua py-12 border-t border-aqua-500/20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold text-gradient-aqua mb-4">DeepHull</h3>
+          <p class="text-pearl-300">Professional marine services with a commitment to quality and safety.</p>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold text-pearl-white mb-4">Services</h4>
+          <ul class="space-y-2 text-pearl-300">
+            <li><a href="#" class="hover:text-aqua-400 transition-all">Hull Cleaning</a></li>
+            <li><a href="#" class="hover:text-aqua-400 transition-all">Prop Polishing</a></li>
+            <li><a href="#" class="hover:text-aqua-400 transition-all">Zinc Replacement</a></li>
+            <li><a href="#" class="hover:text-aqua-400 transition-all">Emergency Service</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold text-pearl-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-pearl-300">
+            <li>(904) 570-0910</li>
+            <li>info@deephull.com</li>
+            <li>Jacksonville, FL</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold text-pearl-white mb-4">Emergency</h4>
+          <p class="text-pearl-300 mb-4">Available 24/7 for emergency marine services.</p>
+          <button class="btn-emergency">Emergency Call</button>
+        </div>
+      </div>
+      
+      <div class="border-t border-aqua-500/20 mt-8 pt-8 text-center">
+        <p class="text-pearl-300">&copy; 2024 DeepHull Diving. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Additional Styles -->
+  <style>
+    /* Enhanced animations and effects */
+    .floating-bubble {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      background: rgba(34, 211, 238, 0.3);
+      border-radius: 50%;
+      filter: blur(2px);
+      animation: float 8s ease-in-out infinite;
+    }
+    
+    .floating-bubble:nth-child(2) {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: rgba(6, 182, 212, 0.4);
+      animation-delay: 2s;
+    }
+    
+    .floating-bubble:nth-child(3) {
+      width: 2.5rem;
+      height: 2.5rem;
+      background: rgba(8, 145, 178, 0.2);
+      animation-delay: 4s;
+    }
+    
+    .floating-bubble:nth-child(4) {
+      width: 1rem;
+      height: 1rem;
+      background: rgba(34, 211, 238, 0.5);
+      animation-delay: 1s;
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Enhanced hover effects */
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Form styling */
+    input, select, textarea {
+      background: rgba(20, 45, 75, 0.8);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+    }
+    
+    input:focus, select:focus, textarea:focus {
+      background: rgba(20, 45, 75, 0.9);
+      box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+    }
+    
+    /* Enhanced glass card effect */
+    .glass-card {
+      background: rgba(20, 45, 75, 0.3);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Gradient text enhancement */
+    .text-gradient-aqua {
+      background: linear-gradient(135deg, #22d3ee, #06b6d4, #0891b2);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-size: 200% 200%;
+      animation: gradient-shift 3s ease-in-out infinite;
+    }
+    
+    @keyframes gradient-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    /* Enhanced button hover effects */
+    .btn-primary:hover, .btn-emergency:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Responsive improvements */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: clamp(2rem, 6vw, 4rem);
+      }
+      
+      .hero-subtitle {
+        font-size: clamp(1rem, 3vw, 2rem);
+      }
+    }
+  </style>
 </body>
 </html>
