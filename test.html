@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System Test</title>
+    <link rel="stylesheet" href="/design-system.css">
+    <style>
+        body {
+            padding: 2rem;
+            font-family: Arial, sans-serif;
+        }
+        .test-card {
+            background: var(--navy-800);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            border: 1px solid var(--aqua-500);
+        }
+        .test-button {
+            background: var(--aqua-500);
+            color: var(--navy-950);
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+        .test-gradient {
+            background: linear-gradient(135deg, var(--aqua-400), var(--aqua-600));
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: var(--aqua-400);">Design System Test Page</h1>
+    
+    <div class="test-card">
+        <h2 style="color: var(--pearl-white);">CSS Variables Test</h2>
+        <p style="color: var(--pearl-300);">This card should have a navy background with aqua border.</p>
+    </div>
+    
+    <div class="test-gradient">
+        <h2 style="color: var(--navy-950);">Gradient Test</h2>
+        <p style="color: var(--navy-950);">This should have an aqua gradient background.</p>
+    </div>
+    
+    <button class="test-button">Test Button</button>
+    <button class="btn-primary">Primary Button</button>
+    <button class="btn-emergency">Emergency Button</button>
+    
+    <div class="glass-card" style="padding: 2rem; margin: 2rem 0;">
+        <h2 style="color: var(--pearl-white);">Glass Card Test</h2>
+        <p style="color: var(--pearl-300);">This should have a glass effect with backdrop blur.</p>
+    </div>
+    
+    <script src="/debug.js"></script>
+    <script>
+        console.log('Design System Test Page Loaded');
+        console.log('CSS Variables Test:');
+        console.log('--navy-950:', getComputedStyle(document.documentElement).getPropertyValue('--navy-950'));
+        console.log('--aqua-500:', getComputedStyle(document.documentElement).getPropertyValue('--aqua-500'));
+        console.log('--pearl-white:', getComputedStyle(document.documentElement).getPropertyValue('--pearl-white'));
+    </script>
+</body>
+</html>
